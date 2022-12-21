@@ -1,11 +1,11 @@
-import { src, dest, watch, parallel, series } from 'gulp';
+const {src, dest, watch, parallel, series} = require('gulp');
 const sass         = require('gulp-sass')(require('sass'));
-import concat from 'gulp-concat';
+const concat       = require ('gulp-concat');
 const browserSync  = require('browser-sync').create();
-import uglify from 'gulp-uglify-es';
-import autoprefixer from 'gulp-autoprefixer';
-import imagemin, { gifsicle, mozjpeg, optipng, svgo } from 'gulp-imagemin';
-import del from 'del';
+const uglify       = require('gulp-uglify-es').default;
+const autoprefixer = require('gulp-autoprefixer');
+const imagemin     = require('gulp-imagemin');
+const del          = require('del');
 
 function browsersync(){
     browserSync.init({
@@ -22,17 +22,17 @@ function cleanDist(){
 function images(){
     return src('app/images/**/*')
     .pipe(imagemin([
-        gifsicle({interlaced: true}),
-        mozjpeg({quality: 75, progressive: true}),
-        optipng({optimizationLevel: 5}),
-        svgo({
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.mozjpeg({quality: 75, progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
             plugins: [
                 {removeViewBox: true},
                 {cleanupIDs: false}
             ]
         })
     ]))
-    .pipe(dest('dist/images'))
+    .pipe(dest('dist/images/'))
 }
 
 function scripts(){
@@ -74,21 +74,13 @@ function watching(){
     watch(['app/*.html']).on('change', browserSync.reload)
 }
 
-const _browsersync = browsersync;
-export { _browsersync as browsersync };
-const _cleanDist = cleanDist;
-export { _cleanDist as cleanDist };
-const _images = images;
-export { _images as images };
-const _styles = styles;
-export { _styles as styles };
-const _scripts = scripts;
-export { _scripts as scripts };
-const _watching = watching;
-export { _watching as watching };
+exports.browsersync = browsersync;
+exports.cleanDist = cleanDist;
+exports.images = images;
+exports.styles = styles;
+exports.scripts = scripts;
+exports.watching = watching;
 
 
-const _build = series(cleanDist, images, build);
-export { _build as build };
-const _default = parallel(styles, scripts, browsersync, watching);
-export { _default as default };
+exports.build = series(cleanDist, images, build);
+exports.default = parallel(styles, scripts, browsersync, watching);
