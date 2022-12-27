@@ -4,4 +4,29 @@
 @import 'libs';
 @import 'global';
 
+.header {
+ margin-top: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+
+  }
+
+    &__list-item {
+  }
+
+  &__list-item:last-child{
+    margin-left: 50px;
+  }
+}
+
 

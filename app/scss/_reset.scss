@@ -32,7 +32,8 @@ dd {
   margin: 0;
 }
 
-ul[class] {
+ul[class],
+li {
   list-style: none;
 }
 
@@ -50,5 +51,4 @@ select {
 
 a{
   text-decoration: none;
-  
 }
