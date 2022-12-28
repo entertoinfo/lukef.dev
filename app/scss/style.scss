@@ -18,14 +18,37 @@
 
   &__list {
     display: flex;
-
-  }
-
-    &__list-item {
+    
   }
 
   &__list-item:last-child{
     margin-left: 50px;
+  }
+
+  &__list-link{
+    @extend %standard-text;
+    position: relative;
+    cursor: pointer;
+    transition: color .4s;
+  }
+  &__list-link:hover{
+    color: rgba(255, 255, 255);
+  }
+
+  &__list-item a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  &__list-item a:hover:after,
+  &__list-item a:focus:after {
+    width: 100%;
   }
 }
 
