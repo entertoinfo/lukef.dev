@@ -26,7 +26,7 @@
   }
 
   &__list-link{
-    @extend %standard-text;
+    @extend %regular-text;
     position: relative;
     cursor: pointer;
     transition: color .4s;
@@ -49,6 +49,20 @@
   &__list-item a:hover:after,
   &__list-item a:focus:after {
     width: 100%;
+  }
+}
+
+.footer {
+
+  &__text-item{
+    @extend %light-text;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 45px;
+  }
+
+  &__img-bottom{
+    min-width: 100%;
   }
 }
 
