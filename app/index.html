@@ -2,35 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome! ;)</title>
-  <link rel="icon" href="./images/favicon.png" type="image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="./images/favicon.png" type="image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__inner">
         <div class="logo">
-          <a href="#"><img src=".//images/logo.png" alt="logo"></a>
+          <a href="#"><img src=".//images/logo.png" alt="logo" /></a>
         </div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Contact
-              </a>
+              <a class="menu__list-link" href="#"> Contact </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Portfolio
-              </a>
+              <a class="menu__list-link" href="./project.html"> Portfolio </a>
             </li>
           </ul>
         </nav>
@@ -39,22 +34,36 @@
   </header>
 
   <div class="wrapper">
-    <main class="main"></main>
+    <main class="main">
+      <section class="profile">
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__avatar">
+              <img class="profile__avatar-img" src="./images/avatar.gif" alt="avatar" />
+            </div>
+            <div class="profile__greetings">Hi, my name is Luke 👋</div>
+            <div class="profile__title">Python Developer <br>and C#</div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__text">
-            <div class="footer__text-item">Developed and Designed <br>
-              with 💜 by Limbo</div>
+            <div class="footer__text-item">
+              Developed and Designed <br />
+              with 💜 by Limbo
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer__img"><img class="footer__img-bottom" src="./images/footer-gradient.svg" alt="gradient"></div>
-      <!-- пофиксить! 1px по бокам на фулл єкране 1920W -->
+      <div class="footer__img">
+        <img class="footer__img-bottom" src="./images/footer-gradient.svg" alt="gradient" />
+      </div>
+      <!--!пофиксить баг! 1px по бокам на фулл єкране 1920W -->
     </footer>
   </div>
-
-
 
   <script src="js/main.min.js"></script>
 </body>
