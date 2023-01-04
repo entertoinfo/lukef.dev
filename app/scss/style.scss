@@ -5,7 +5,7 @@
 @import 'global';
 
 .header {
- margin-top: 20px;
+  margin-top: 20px;
 
   &__inner {
     display: flex;
@@ -18,20 +18,21 @@
 
   &__list {
     display: flex;
-    
+
   }
 
-  &__list-item:last-child{
+  &__list-item:last-child {
     margin-left: 50px;
   }
 
-  &__list-link{
+  &__list-link {
     @extend %regular-text;
     position: relative;
     cursor: pointer;
     transition: color .4s;
   }
-  &__list-link:hover{
+
+  &__list-link:hover {
     color: rgba(255, 255, 255);
   }
 
@@ -54,30 +55,94 @@
 
 .footer {
 
-  &__text-item{
+  &__text-item {
     @extend %light-text;
     display: flex;
     justify-content: end;
     margin-bottom: 45px;
   }
 
-  &__img-bottom{
+  &__img-bottom {
     min-width: 100%;
   }
 }
 
 .profile {
   display: flex;
-  background-image: url(../images/avatar-gradient.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 230px;
-  padding: 75px 0;
-  margin-top: 75px;
-  
+
+  &__avatar {
+    background-image: url(../images/avatar-gradient.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 230px;
+    padding: 75px;
+    margin-top: 75px;
+  }
+
   &__avatar-img {
     width: 90px;
     height: 90px;
     border-radius: 60px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend %title-text;
+    text-align: center;
+  }
+
+  &__speciality {
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  &__social-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  &__social-link:first-of-type{
+    margin-right: 25px;
+  }
+}
+
+.experiences {
+  margin-top: 90px;
+  background-image: url(../images/bg-gradient.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 200px;
+  
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-box {
+  }
+
+  &__title {
+    text-align: center;   
+    @extend %title-text;
+  }
+  
+  &__descr{
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #5C5F87;
+    margin-top: 40px;
   }
 }
