@@ -112,7 +112,7 @@
     height: 36px;
   }
 
-  &__social-link:first-of-type{
+  &__social-link:first-of-type {
     margin-right: 25px;
   }
 }
@@ -120,29 +120,90 @@
 .experiences {
   margin-top: 90px;
   background-image: url(../images/bg-gradient.svg);
-  background-position: left;
+  background-position-x: -240px;
   background-repeat: no-repeat;
-  padding: 200px;
-  
+  background-size: 435px;
+
   &__inner {
     display: flex;
-    justify-content: center;
-  }
-
-  &__text-box {
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
-    text-align: center;   
+    text-align: center;
     @extend %title-text;
   }
-  
-  &__descr{
+
+  &__descr {
     font-family: 'Signika', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 40px;
-    color: #5C5F87;
-    margin-top: 40px;
+    color: #8286B8;
+    margin-top: 30px;
+  }
+
+  &__cart-item {
+    height: 314px;
+    width: 400px;
+    border-radius: 24px;
+    background: rgba(72, 61, 111, 0.5);
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  &__cart-top {
+    display: flex;
+    align-items: center;
+    padding: 32px 32px 0;
+  }
+
+  &__cart-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+  }
+
+  &__cart-title {
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  &__cart-descr {
+    @extend %light-text;
+    line-height: 26px;
+    padding: 20px 32px 32px;
+    max-width: 350px;
+  }
+
+  &__cart-underline {
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(92, 95, 135, 0.2) 0%, rgba(41, 43, 71, 0.2) 50%, rgba(53, 57, 100, 0.2) 100%);
+  }
+
+  &__cart-box{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2rem;
+    margin-top: 100px;
+  }
+
+  &__cart-boxTechnology {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px;
+  }
+
+  &__cart-technology {
+    // width: 22px;
+    // height: 22px;
+    margin-left: 12px;
   }
 }
