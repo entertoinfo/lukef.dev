@@ -4,69 +4,6 @@
 @import 'libs';
 @import 'global';
 
-.header {
-  margin-top: 20px;
-
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-.menu {
-
-  &__list {
-    display: flex;
-
-  }
-
-  &__list-item:last-child {
-    margin-left: 50px;
-  }
-
-  &__list-link {
-    @extend %regular-text;
-    position: relative;
-    cursor: pointer;
-    transition: color .4s;
-  }
-
-  &__list-link:hover {
-    color: rgba(255, 255, 255);
-  }
-
-  &__list-item a::after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    content: "";
-    transition: width 0.3s ease-out;
-  }
-
-  &__list-item a:hover:after,
-  &__list-item a:focus:after {
-    width: 100%;
-  }
-}
-
-.footer {
-
-  &__text-item {
-    @extend %light-text;
-    display: flex;
-    justify-content: end;
-    margin-bottom: 45px;
-  }
-
-  &__img-bottom {
-    min-width: 100%;
-  }
-}
-
 .profile {
   display: flex;
 
@@ -150,6 +87,13 @@
     border-radius: 24px;
     background: rgba(72, 61, 111, 0.5);
     box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__cart-item:last-child {
+    display: block;
   }
 
   &__cart-top {
@@ -188,9 +132,9 @@
     border-image-source: linear-gradient(90deg, rgba(92, 95, 135, 0.2) 0%, rgba(41, 43, 71, 0.2) 50%, rgba(53, 57, 100, 0.2) 100%);
   }
 
-  &__cart-box{
+  &__cart-box {
     display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 100px;
   }
@@ -202,8 +146,35 @@
   }
 
   &__cart-technology {
-    // width: 22px;
-    // height: 22px;
     margin-left: 12px;
+  }
+}
+
+.developing {
+
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 0;
+  }
+
+  &__title {
+    font-family: 'Signika', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__descr {
+    @extend %title-text;
+    color: #5C5F87;
+    margin-top: 10px;
+  }
+
+  &__img {
+    margin-top: 20px;
   }
 }

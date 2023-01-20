@@ -23,6 +23,69 @@ body {
   padding: 0 15px;
 }
 
+.header {
+  margin-top: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+
+  }
+
+  &__list-item:last-child {
+    margin-left: 50px;
+  }
+
+  &__list-link {
+    @extend %regular-text;
+    position: relative;
+    cursor: pointer;
+    transition: color .4s;
+  }
+
+  &__list-link:hover {
+    color: rgba(255, 255, 255);
+  }
+
+  &__list-item a::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  &__list-item a:hover:after,
+  &__list-item a:focus:after {
+    width: 100%;
+  }
+}
+
+.footer {
+
+  &__text-item {
+    @extend %light-text;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 45px;
+  }
+
+  &__img-bottom {
+    min-width: 100%;
+  }
+}
+
 
 
 

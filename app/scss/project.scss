@@ -1,0 +1,57 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.project {
+  background-image: url(../images/bg-gradient-project.svg);
+  background-repeat: no-repeat;
+  background-position-x: 1300px;
+  background-size: 400px;
+
+  &__title {
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  &__server-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 0.2fr));
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  &__server {
+    max-height: 314px;
+    max-width: 270px;
+    border-radius: 24px;
+    background: rgba(72, 61, 111, .5);
+    box-shadow: 0px 25px 50px -12px rgb(0 0 0 / 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__server-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  &__server-name {
+    font-family: 'Signika', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    margin: 10px 0 10px;
+  }
+}
