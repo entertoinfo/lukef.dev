@@ -54,21 +54,52 @@ body {
   &__list-link:hover {
     color: rgba(255, 255, 255);
   }
+  
+  //Другой стиль подчеркивания, так же был одним из вариантов.
+  // &__list-item a::before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 50%;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: #3A0CA3;
+  //   transform-origin: center;
+  //   transform: translate(-50%, 0) scaleX(0);
+  //   transition: transform 0.3s ease-in-out;
+  // }
+  
+  // &__list-item a:hover::before {
+  //   transform: translate(-50%, 0) scaleX(1);
+  // }
 
-  &__list-item a::after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    content: "";
-    transition: width 0.3s ease-out;
+  &__list-item {
+    position: relative;
+    padding: 1px 0;
   }
-
-  &__list-item a:hover:after,
-  &__list-item a:focus:after {
+  
+  &__list-item::before, &__list-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
     width: 100%;
+    height: 2px;
+    background-color: #3A0CA3;
+    transform-origin: center;
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.4s ease;
+  }
+  
+  &__list-item::before {
+    top: 0;
+  }
+  
+  &__list-item::after {
+    bottom: 0;
+  }
+  
+  &__list-item:hover::before, &__list-item:hover::after {
+    transform: translateX(-50%) scaleX(1);
   }
 }
 
@@ -81,8 +112,12 @@ body {
     margin-bottom: 45px;
   }
 
-  &__img-bottom {
+  &__gradient-bottom {
     min-width: 100%;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(90deg, rgba(60,12,164,1) 0%, rgba(54,9,121,1) 39%, rgba(181,23,158,1) 100%);
   }
 }
 
