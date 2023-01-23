@@ -7,7 +7,7 @@
 .project {
   background-image: url(../images/bg-gradient-project.svg);
   background-repeat: no-repeat;
-  background-position-x: 1300px;
+  background-position: center;
   background-size: 400px;
 
   &__title {
@@ -55,3 +55,5 @@
     margin: 10px 0 10px;
   }
 }
+
+@import 'media';

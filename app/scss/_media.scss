@@ -1,0 +1,30 @@
+@media (max-width: 1150px) {
+  .experiences__cart-item {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .experiences__descr {
+    text-align: center;
+  }
+
+  .experiences__cart-box {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .developing__inner {
+    padding: 50px 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .experiences__cart-box {
+    margin-top: 35px;
+  }
+
+  .footer__text-item{
+    margin-bottom: 20px;
+  }
+}
