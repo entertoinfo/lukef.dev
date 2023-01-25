@@ -3,9 +3,30 @@
     height: auto;
     width: auto;
   }
+  .project__server{
+    min-width: 195px;
+    min-height: 138px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project__server-box{
+    grid-template-columns: repeat(1, minmax(0, 0.2fr));
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .footer{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 820px) {
+
+  .header__inner{
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .experiences__descr {
     text-align: center;
   }
@@ -17,6 +38,16 @@
   .developing__inner {
     padding: 50px 0 0;
   }
+
+  .menu{
+    display: none;
+  }
+
+  .menu__media{
+    display: block;
+  }
+
+  
 }
 
 @media (max-width: 500px) {
@@ -24,7 +55,38 @@
     margin-top: 35px;
   }
 
-  .footer__text-item{
+  .footer__text-item {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile__speciality {
+    font-size: 40px;
+  }
+
+  .profile__title {
+    font-size: 30px;
+  }
+
+  .project__title{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 365px) {
+
+  .developing__descr,
+  .experiences__title,
+  .profile__title {
+    font-size: 25px;
+  }
+
+  .profile__speciality, .developing__title {
+    font-size: 30px;
+  }
+
+  .experiences__descr{
+    font-size: 17px;
   }
 }

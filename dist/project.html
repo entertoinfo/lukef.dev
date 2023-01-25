@@ -2,25 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lukef.dev</title>
-  <link rel="icon" href="./images/favicon.png" type="image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome! ;)</title>
+  <link rel="icon" href="./images/favicon.png" type="image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo">
+          <a href="#"><img src=".//images/logo.png" alt="logo" /></a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="https://discord.com/users/175856311827693568"> Contact </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="./index.html"> Home </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  <header class="header"></header>
   <div class="wrapper">
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main">
+      <section class="project">
+        <div class="container">
+          <div class="project__inner">
+            <h1 class="project__title">My project</h1>
+            <div class="project__server-box">
+              <!--* Карточка проекта -->
+              <!--? В href нужно вставить инвайт на проект -->
+              <a class="project__server" href="#">
+                <img class="project__server-img" src="./images/company-ico/saeland.png" alt="icon">
+                <h5 class="project__server-name">
+                  Saeland
+                </h5>
+              </a>
+              <!-- ! -->
+              <a class="project__server" href="#">
+                <img class="project__server-img" src="./images/company-ico/hakumo.gif" alt="icon">
+                <h5 class="project__server-name">
+                  Hakumo
+                </h5>
+              </a>
+              <!-- ! -->
+              <a class="project__server" href="#">
+                <img class="project__server-img" src="./images/company-ico/rtc.png" alt="icon">
+                <h5 class="project__server-name">
+                  RTC community
+                </h5>
+              </a>
+              <!-- ! -->
+              <a class="project__server" href="#">
+                <img class="project__server-img" src="./images/company-ico/war-thunder.svg" alt="icon">
+                <h5 class="project__server-name">
+                  Adoble
+                </h5>
+              </a>
+              <!-- ! -->
+              <!--* Конец карточки проекта -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__text">
+            <div class="footer__text-item">
+              Developed and Designed <br />
+              with 💜 by Limbo
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__gradient-bottom">
+      </div>
+    </footer>
   </div>
-
-
 
   <script src="js/main.min.js"></script>
 </body>

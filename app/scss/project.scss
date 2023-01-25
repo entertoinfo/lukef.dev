@@ -23,7 +23,7 @@
   &__server-box {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 0.2fr));
-    gap: 2rem;
+    gap: 35px;
     justify-content: center;
     margin-top: 50px;
   }
@@ -52,7 +52,7 @@
     font-size: 20px;
     line-height: 28px;
     color: #fff;
-    margin: 10px 0 10px;
+    margin: 15px;
   }
 }
 

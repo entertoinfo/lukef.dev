@@ -2,35 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome! ;)</title>
-  <link rel="icon" href="./images/favicon.png" type="image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="./images/favicon.png" type="image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-
   <header class="header">
     <div class="container">
       <div class="header__inner">
         <div class="logo">
-          <a href="#"><img src=".//images/logo.png" alt="logo"></a>
+          <a href="#"><img src=".//images/logo.png" alt="logo" /></a>
         </div>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Contact
-              </a>
+              <a class="menu__list-link" href="https://discord.com/users/175856311827693568"> Contact </a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Portfolio
-              </a>
+              <a class="menu__list-link" href="./project.html"> Portfolio </a>
             </li>
           </ul>
         </nav>
@@ -39,11 +34,143 @@
   </header>
 
   <div class="wrapper">
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <main class="main">
+      <section class="profile">
+        <div class="container">
+          <div class="profile__inner">
+            <div class="profile__avatar">
+              <img class="profile__avatar-img" src="./images/avatar.gif" alt="avatar" />
+            </div>
+            <div class="profile__text">
+              <h1 class="profile__title">Hi, my name is Luke👋</h1>
+              <h2 class="profile__speciality">Python Developer <br>and C#</h2>
+            </div>
+            <div class="profile__social">
+              <a class="profile__social-link" target="_blank" href="https://github.com/LukeFokin"><img
+                  class="profile__social-img" src="./images/github.svg" alt="github"></img></a>
+              <a class="profile__social-link" target="_blank" href="https://discord.com/users/175856311827693568"><img
+                  class="profile__social-img" src="./images/discord.svg" alt="discord"></img></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="experiences">
+        <div class="container">
+          <div class="experiences__inner">
+            <div class="experiences__text-box">
+              <h2 class="experiences__title">Work experiences</h2>
+              <p class="experiences__descr">Find all my professional experience, including the work done and the
+                technical stack used!</p>
+            </div>
+            <div class="experiences__cart-box">
+              <!-- Начало блока с карточками -->
+              <div class="experiences__cart-item">
+                <div class="experiences__cart-top">
+                  <img class="experiences__cart-img" src="./images/company-ico/rtc.png" alt="icon">
+                  <h5 class="experiences__cart-title">
+                    Python developer <br> RTC community
+                  </h5>
+                </div>
+                <p class="experiences__cart-descr">
+                  Code Rewriter One of the main developers, who develops api and basic systems of the project.
+                </p>
+                <!-- Пустой div для отображения border в карточке -->
+                <div class="experiences__cart-underline"></div>
+                <div class="experiences__cart-boxTechnology">
+                  <img class="experiences__cart-technology" src="./images/python.svg" alt="python">
+                  <img class="experiences__cart-technology" src="./images/disnake.svg" alt="disnake">
+                  <img class="experiences__cart-technology" src="./images/postgresql.svg" alt="PostgreSQL">
+                  <img class="experiences__cart-technology" src="./images/git.svg" alt="Git">
+                </div>
+              </div>
+              <div class="experiences__cart-item">
+                <div class="experiences__cart-top">
+                  <img class="experiences__cart-img" src="./images/company-ico/saeland.png" alt="icon">
+                  <h5 class="experiences__cart-title">
+                    Project Owner “Saeland”
+                  </h5>
+                </div>
+                <p class="experiences__cart-descr">
+                  The owner and main developer of a bot called Saeland. But the project is already closed.
+                </p>
+                <!-- Пустой div для отображения border в карточке -->
+                <div class="experiences__cart-underline"></div>
+                <div class="experiences__cart-boxTechnology">
+                  <img class="experiences__cart-technology " src="./images/mongoBD.svg" alt="MongoBD">
+                  <img class="experiences__cart-technology" src="./images/python.svg" alt="python">
+                  <img class="experiences__cart-technology" src="./images/disnake.svg" alt="disnake">
+                  <img class="experiences__cart-technology" src="./images/postgresql.svg" alt="PostgreSQL">
+                  <img class="experiences__cart-technology" src="./images/git.svg" alt="Git">
+                </div>
+              </div>
+              <div class="experiences__cart-item">
+                <div class="experiences__cart-top">
+                  <img class="experiences__cart-img" src="./images/company-ico/hakumo.gif" alt="icon">
+                  <h5 class="experiences__cart-title">
+                    Hakumo
+                  </h5>
+                </div>
+                <p class="experiences__cart-descr">
+                  Server bot developer and server setup. Server moderation and promotion.
+                </p>
+                <!-- Пустой div для отображения border в карточке -->
+                <div class="experiences__cart-underline"></div>
+                <div class="experiences__cart-boxTechnology">
+                  <img class="experiences__cart-technology " src="./images/mongoBD.svg" alt="MongoBD">
+                  <img class="experiences__cart-technology" src="./images/fastapi.svg" alt="python">
+                  <img class="experiences__cart-technology" src="./images/python.svg" alt="python">
+                  <img class="experiences__cart-technology" src="./images/disnake.svg" alt="disnake">
+                  <img class="experiences__cart-technology" src="./images/git.svg" alt="Git">
+                </div>
+              </div>
+              <div class="experiences__cart-item">
+                <div class="experiences__cart-top">
+                  <img class="experiences__cart-img" src="./images/company-ico/war-thunder.svg" alt="icon">
+                  <h5 class="experiences__cart-title">
+                    Tech.lid | Adoble
+                  </h5>
+                </div>
+                <p class="experiences__cart-descr">
+                  The main developer of the adoble server. I am engaged in development of local api and server bot.
+                </p>
+              </div>
+              <!-- Конец блока с карточками -->
+            </div>
+            <div class="dispatch">
+              <a class="dispatch__btn" href="./project.html">More projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="developing">
+        <div class="container">
+          <div class="developing__inner">
+            <h2 class="developing__title">
+              It's coming soon...
+            </h2>
+            <p class="developing__descr">
+              *i’m serious ^_^*
+            </p>
+            <img class="developing__img" src="./images/coming_soon_2.7c5e9a75.png" alt="clock">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__text">
+            <div class="footer__text-item">
+              Developed and Designed <br />
+              with 💜 by Limbo
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__gradient-bottom">
+      </div>
+    </footer>
   </div>
-
-
 
   <script src="js/main.min.js"></script>
 </body>
